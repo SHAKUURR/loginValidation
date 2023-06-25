@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Plus+Jakarta+Sans:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="analytics.css" />
+    <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Media Query/analyticsMQ.css" />
+    <title>Analytics</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="side-bar sidebarHidden">
+        <div class="side-details">
+          <div class="user-profile">
+            <p class="user-photo">PA</p>
+            <p class="user-name">Peace Adedokun</p>
+          </div>
+
+          <ul class="user-nav">
+            <li class="nav-list">
+              <a href="../../app/adminDashboard/dashboard.html" class="nav-link">
+                <img src="../../images/dashboard2.png" class="nav-image">
+
+                <span class="nav-item">Dashboard</span>
+              </a </li>
+
+            <li class="nav-list">
+              <a href="../../app/userDashboard/wallet.html" class="nav-link">
+                <img src="../../images/Credit Card 1.png" class="nav-image">
+
+                <span class="nav-item">Wallet</span>
+              </a </li>
+
+            <li class="nav-list">
+              <a href="../../app/adminDashboard/tranhistory.html" class="nav-link">
+                <img src="../../images/History.png" class="nav-image">
+
+                <span class="nav-item">Transactions</span>
+              </a </li>
+
+            <li class="nav-list nav-active">
+              <a href="../../app/adminDashboard/analytics.html" class="nav-link active-link">
+                <img src="../../images/Chart Statistics 2 (2).png" class="nav-image">
+
+                <span class="nav-item">Analytics</span>
+              </a </li>
+
+            <li class="nav-list settings">
+              <a href="../../app/settings/settings.html" class="nav-link">
+                <img src="../../images/Settings 1.png" class="nav-image">
+
+                <span class="nav-item">Settings</span>
+              </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-list"><a href="../../app/settings/settings.html">Profile</a></li>
+                  <li class="dropdown-list"><a href="../../app/settings/password.html">Change Password</a></li>
+                  <li class="dropdown-list"><a href="../../app/settings/pin.html">Change Pin</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-list">
+              <a href="#" class="nav-link">
+                <img src="../../images/Settings 1.png" class="nav-image">
+
+                <span class="nav-item">Developers</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="log">
+          <a href="#" class="arrow-link"><img src="../../images/Icon.png" class="arrow"></a>
+          <span class="logout"><a href="#" class="logout-link">Logout</a></span>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="heading">
+          <form class="search-form">
+            <input type="text" placeholder="Search for anything..." class="search-input">
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass search-image"></i>
+              <!-- <img src="../../images/search.png" class="search-image"> -->
+            </button>
+          </form>
+
+          <div class="notification">
+            <i class="fa-sharp fa-regular fa-bell notify"></i>
+
+            <!-- <img src="../../images/clarity_notification-line.png" class="notify"> -->
+
+            <img src="../../images/cil_settings.png" class="settings">
+          </div>
+        </div>
+
+        <div class="content-details">
+          <!-- .................CONTENT LEFT.................. -->
+          <div class="content-left">
+            <div class="barLink"><i class="fas fa-bars" id="menu"></i></div>
+            <div class="welcome">
+              <a href="#" class="back-link">
+                <p class="back"><span class="back-arrow"> &larr;</span>Back</p>
+              </a>
+            </div>
+
+
+
+            <!-- ....ANALYTICS.... -->
+            <div class="analytics-box">
+              <div class="analytics-header">
+                <div class="analytics-text">Analytics</div>
+                <div class="analytics-details">
+                  <h3 class="analytics-income">Income</h3>
+                  <h3 class="analytics-outcome">Outcome</h3>
+
+                  <select class="analytics-select">
+                    <option class="analytics-option">2023</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <canvas id="Chart"></canvas>
+              </div>
+              <!-- <img src="../../images/analytics (2).png" class="analytics-graph"> -->
+            </div>
+
+          </div>
+          <!-- .................CONTENT RIGHT.................. -->
+          <div class="content-right">
+
+            <!-- ..........ACTIVITY............ -->
+            <div class="activity">
+              <div class="activity-head">
+                <h4 class="activity-text">Activity</h4>
+                <select class="activity-select">
+                  <option class="activity-option">Month</option>
+                </select>
+              </div>
+              <div class="chartCard">
+                <div class="chartBox">
+                  <canvas id="myChart" style="margin: 4rem auto 0 auto"></canvas>
+                </div>
+              </div>
+              <!-- <img src="../../images/activity.png" class="activity-graph"> -->
+              <p class="activity-percent">75%</p>
+
+              <div class="activity-progress">
+                <div class="activity-report">
+                  <h5 class="activity-payment">Daily payment</h5>
+                  <p class="activity-per">55%</p>
+                </div>
+
+                <div class="activity-report">
+                  <h5 class="activity-hobby">Hobby</h5>
+                  <p class="activity-per">20%</p>
+                </div>
+              </div>
+              <button type="submit" class="activity-btn">View all activity <span class="activity-arrow">&#8594;</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </header>
+    <script src="../../JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // setup 
+      const data = {
+        labels: ['Daily Payment', 'Hobby', 'Wed'],
+        datasets: [{
+          label: 'Activity',
+          data: [35, 25, 8],
+          backgroundColor: [
+            'rgba(0, 99, 93, 1)',
+            'rgba(8, 164, 189, 1)',
+            'rgba(58, 58, 90, 1)',
+          ],
+          borderColor: [
+            'rgba(0, 99, 93, 1)',
+            'rgba(8, 164, 189, 1)',
+            'rgba(58, 58, 90, 1)',
+          ],
+          borderWidth: 1,
+          cutout: '75%',
+          circumference: 180,
+          rotation: 270,
+          borderRadius: 3
+        }]
+      };
+
+      // config 
+      const config = {
+        type: 'doughnut',
+        data,
+        options: {
+          aspectRatio: 2,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          // spacing: -20 //set the spacing between segments to 0
+        }
+      };
+
+      // render init block
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+
+      // Instantly assign Chart.js version
+      const chartVersion = document.getElementById('chartVersion');
+
+      const ctx = document.getElementById('Chart');
+
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+          datasets: [{
+            label: 'Outcome',
+            data: [28, 31, 12, 26, 34, 29, 29, 29],
+            backgroundColor: [
+              'rgba(100, 207, 246, 1)',
+              'rgba(100, 207, 246, 1)',
+            ],
+            borderWidth: 1,
+            borderRadius: 80,
+            categoryPercentage: 0.3,
+            barPercentage: 0.6
+          },
+          {
+            label: 'Income',
+            data: [31, 28, 11, 38, 41, 22, 22, 22],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: [
+              'rgba(90, 81, 212, 1)',
+              'rgba(90, 81, 212, 1)',
+            ],
+            borderWidth: 1,
+            borderRadius: 80,
+            categoryPercentage: 0.3,
+            barPercentage: 0.6
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              grid: {
+                display: false,
+              },
+
+            },
+            y: {
+              grid: {
+                color: 'rgba(140, 137, 180, 0.5)',
+              },
+              border: {
+                dash: [5, 9],
+              },
+
+              beginAtZero: true,
+              ticks: {
+                callback: function (value, index, values) {
+                  return value + 'k';
+                },
+                stepSize: 10,
+                min: 10,
+                max: 50,
+              },
+            }
+
+          },
+          plugins: {
+            legend: false
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

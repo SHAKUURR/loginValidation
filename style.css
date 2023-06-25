@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #00635d;
+  position: relative;
+  height: 100vh;
+}
+
+.header {
+  background-color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem 6rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  width: 40%;
+  height: auto;
+  box-shadow: 0px 5.03758px 5.03758px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+/* ..................INPUT FIELD.............. */
+
+.form {
+  margin-top: 3rem;
+}
+
+.fullname,
+.username,
+.password,
+.number {
+  display: block;
+  width: 100%;
+  padding: 1.789rem 2.698rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.629585rem;
+}
+
+input {
+  font-size: 1.7rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.fullname::placeholder,
+.username::placeholder,
+.password::placeholder {
+  font-size: 1.7rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.fullname:focus,
+.username:focus,
+.password:focus,
+.number {
+  outline: none;
+}
+
+/* ..................TERMS.............. */
+.terms-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+input.checkbox {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.5rem;
+  background-color: #0000;
+}
+
+.terms {
+  font-size: 1.5rem;
+}
+
+.terms-link {
+  text-decoration: none;
+  color: #467bfb;
+}
+
+/* ..................CREATE AN ACCOUNT.............. */
+
+.create {
+  width: 100%;
+  margin-top: 2.842rem;
+  font-weight: 400;
+  color: #999999;
+  padding: 2.24rem;
+  background-color: #00635d;
+  border-radius: 0.629585rem;
+  border: none;
+  font-size: 1.7rem;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+/* ..................SIGNUP WITH GOOGLE.............. */
+
+.login-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.698rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1.25917px solid #3d5b81;
+  border-radius: 0.629585rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.google-image {
+  width: 3rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.google-text {
+  color: #3d5b81;
+  font-size: 1.7rem;
+}
+
+/* ..................ALREADY HAVE AN ACCOUNT.............. */
+
+.already-account-box {
+  text-align: center;
+  margin-top: 2.68rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  color: #999999;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.already-account {
+  display: inline-block;
+}
+
+.already-link {
+  text-decoration: none;
+  color: #4a86f8;
+  margin-right: 4.4rem;
+}
+
+.admin {
+  display: inline-block;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #333333;
+}
